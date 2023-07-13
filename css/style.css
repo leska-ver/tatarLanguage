@@ -944,17 +944,7 @@ main {
   }
 
 
-  /*** Раздел про учителя avtor-1550px ***/
-  .avtor {
-    margin-top: -75px;
-  }
-  /*** // Раздел про учителя avtor-1550px ***/
-
   /*** Раздел donat-1550px ***/
-  .donat {
-    margin-top: -75px;
-  }
-
   .donat__desrc {
     font-size: 29px;
     line-height: 42px;
@@ -1228,7 +1218,7 @@ main {
 
   /*** Раздел про учителя avtor-1024px ***/
   .avtor {
-    margin: 0;
+    margin: -85px 0 0;
   } 
 
   .avtor__container {
@@ -1245,7 +1235,7 @@ main {
 
   /*** Раздел donat-1024px ***/
   .donat {
-    margin: 0;
+    margin: -85px 0 0;
   } 
 
   .donat__container {
@@ -1367,6 +1357,10 @@ main {
 
 
   /*** Раздел про учителя avtor-768px ***/
+  .avtor {
+    margin-top: 0;
+  }
+
   .avtor__container {
     padding: 20px;
   }
@@ -1374,6 +1368,10 @@ main {
 
 
   /*** Раздел donat-768px ***/
+  .donat {
+    margin-top: 0;
+  }
+
   .donat__container {
     padding: 20px 20px 70px;
   }
@@ -1441,7 +1439,17 @@ main {
     display: block;
   }
 
+  /*** Раздел про учителя avtor-580px ***/
+  .avtor {
+    margin: -1px;
+  }
+  /*** Раздел про учителя avtor-580px ***/ 
+
   /*** Раздел donat-580px ***/
+  .donat {
+    margin-top: -1px;
+  }
+
   .donat__container h2 {
     font-size: 35px;
   }

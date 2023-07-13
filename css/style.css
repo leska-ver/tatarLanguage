@@ -1,0 +1,1469 @@
+@font-face {
+  font-family: 'OpenSsans';
+  src: url('../fonts/OpenSsansRregular.woff2'), url('../fonts/OpenSsansRregular.woff');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'), url('../fonts/Ubuntu-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-greenPea: #195557;
+  --color-juniper: #70908b;
+  --color-portGore: #212353;
+  --color-lima: #88b416;
+  --color-mindaro: #d7f579;
+  --color-silver: #c4c4c4;
+  --color-red: #ff0000;
+  --color-roseBud: #fab9b9;
+  --color-madison: #0e3b6c;
+  --color-astral: #3172b9;
+  --color-havelockBlue: #71a7e2;
+  --color-codGray: #1c1c1c;
+  --color-boulder: #787878;
+  --color-gray: #888;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  /*Для .wrapper Это будет нужно для footer*/
+  height: 100%;
+}
+
+body {
+  min-width: 400px;
+  font-family: 'OpenSsans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-black);
+}
+
+img {
+  max-width: 100%;
+}
+
+img, svg {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  /*перенос слов*/
+  word-wrap: break-word;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {    
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* Для семантики если нет заголовка h1 в вёрстке. Ставим скрытый заголовок. */
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/*Табы - от Меню header js(Главная-Об авторе-Донат)*/
+.tab-info.tab-content {
+  display: none;
+}
+
+.tab-info.tab-content-active {
+  display: block;
+}
+/* // Табы - от Меню header js(Главная-Об авторе-Донат)*/
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  /*1700px = 1600px + 50px + 50px не менять*/
+  max-width: 1700px;
+}
+
+.h3 {
+  font-size: 36px;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.desrc {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.btn {
+  position: relative;
+  padding: 15px 35px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: var(--color-astral);
+  color: var(--color-white);
+  border-radius: 3px;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  border: 1px solid var(--color-astral);
+  border-radius: inherit;
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+.btn:focus::after {
+  opacity: 1;
+}
+
+.btn:hover {
+  background-color: var(--color-havelockBlue);
+}
+
+.btn:active {
+  background-color: var(--color-madison);
+}
+
+.btn:active::after {
+  opacity: 0;
+}
+
+main {
+  background-color: var(--color-lima);/*Для фона*/
+}
+
+.color-red {
+  color: red;
+}
+
+.color-lightRed {
+  color: var(--color-roseBud);
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-blue {
+  color: var(--color-astral);
+}
+
+.font-size12 {
+  font-size: 12px;
+}
+
+.span-borderBoka {
+  padding: 0 2px;
+  border-left: 1px solid var(--color-red);
+  border-right: 1px solid var(--color-red);
+}
+
+.span-underline {
+  text-decoration: underline var(--color-red) dashed;
+  /* «Нулевая» позиция установлена по нижней границе блока */
+  text-underline-position: under;
+}
+
+.none1920, .course__right-table_none5-1920, .course__right-table_none6-1920, .course__right-table_none7-1920, .course__right-spannone7-1920, .course__right-table_none10-1920, .course__right-table_none12-1920, .course__right-table_none13-1920, .course__right-table_none22-1920, .course__right-table_clone24-1920 {
+  display: none;
+}
+
+
+
+/***Шапка header-1920px***/
+.header {
+  position: relative;  
+  padding: 35px 0;
+  background-color: var(--color-white);
+  z-index: 1;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.header__logo {
+  margin-right: auto;
+  padding: 10px 10px 5px;
+  border-top: 5px double transparent;
+  border-bottom: 5px double var(--color-greenPea);
+  border-radius: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  color: var(--color-greenPea);
+  outline: none;
+  cursor: pointer;
+  transition: border .4s ease-in-out, color .4s ease-in-out;
+}
+
+.header__logo:focus {
+  border-bottom: 5px double var(--color-juniper);
+  color: var(--color-juniper);
+}
+
+.header__logo:hover {
+  border-bottom: 5px double var(--color-astral);
+  color: var(--color-astral);
+}
+
+.header__logo:active {
+  color: var(--color-juniper);
+}
+
+.header__block-burger {
+  margin: -5px -5px -5px 20px;
+}
+
+.burger {
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.header__burger {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__nav { 
+  /*Нужен для разворота burger*/
+  z-index: 2;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  /* min-width: 455px; ? */
+}
+
+.header__item:not(:last-child) {
+  margin-right: 71px;
+}
+
+/*Все кроме последнего*/
+.header__item:nth-last-child(n+2) {
+  margin-right: 30px;
+}
+
+.header__btn {
+  position: relative;
+  padding: 10px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;  
+  color: var(--color-codGray);
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: borde .4s ease-in-out, color .4s ease-in-out, box-shadow .4s ease-in-out;
+  -ms-transition: borde .4s ease-in-out, color .4s ease-in-out, box-shadow .4s ease-in-out;
+  -moz-transition: borde .4s ease-in-out, color .4s ease-in-out, box-shadow .4s ease-in-out;
+  -o-transition: borde .4s ease-in-out, color .4s ease-in-out, box-shadow .4s ease-in-out;
+  transition: borde .4s ease-in-out, color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.header__btn:focus {
+  border-bottom: 1px solid var(--color-portGore);
+  box-shadow: 0px 5px 5px -5px var(--color-greenPea);
+  color: var(--color-portGore);
+}
+
+.header__btn:hover {
+  color: var(--color-lima);
+}
+
+.header__btn--active, .header__btn:active {
+  border: 1px solid transparent;
+  box-shadow: 0 5px 5px -5px var(--color-greenPea);
+}
+
+/*не удалят! JS активная кнопка -Главная-*/
+.tab-is-active.header__btn {
+  border-bottom: 1px solid var(--color-portGore);
+  box-shadow: 0px 5px 5px -5px var(--color-greenPea);
+  color: var(--color-portGore);
+}
+/* // не удалят! JS активная кнопка -Главная-*/
+/*** // Шапка header-1920px***/
+
+
+/***hero-1920px***/
+.hero__img {
+  position: relative;
+  width: 1600px;
+  height: 760px;
+  background-image: url("../img/header__img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*** // hero-1920px***/
+
+/***Курс course-1920px***/
+.course {
+  position: relative;
+  margin: -150px 0 0;
+}
+
+.course__container {
+  display: grid;
+  grid-template-columns: 414px 1fr;
+  gap: 40px;
+} 
+
+/*Левый блок left-1920px*/
+.course__left  {
+  margin-left: 30px;
+  background-color: var(--color-white);
+}
+
+.course__left-list {
+  padding: 20px;
+  width: max-content;
+}
+
+.course__left-list_none1920, .course__left-list_none1921, .course__left-list_none1922, .course__left_768 {
+  display: none;
+}
+
+.course__left-btn {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*Табы*/
+.course__left-btn_js {
+  padding: 5px;
+  border: 1.2px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.course__left-btn_js:focus {
+  border-bottom: 1.2px solid var(--color-black);
+}
+
+.course__left-btn_js:hover {
+  border: 1.2px solid var(--color-lima);
+}
+
+.course__left-btn_js:active {
+  border: 1.2px solid transparent;
+  border-bottom: 1.2px solid var(--color-lima);
+}
+
+.course__left-btn_js--active {
+	color: var(--color-lima);
+}
+
+/* Плавающий блок js - course__left_id*/
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+
+.course__left-stop {
+  position: relative;
+  z-index: 101;
+}
+/* // Плавающий блок js - course__left_id*/
+/* // Левый блок left-1920px*/
+
+/*Правый блок right-1920px*/
+.course__right {
+  margin-right: 30px;
+  padding: 20px 30px;
+  background-color: var(--color-white);
+}
+
+.course__right-content {
+  padding: 0 20px;
+}
+
+/*Табы правого блока - 1920px*/
+.tabs-itemJs:not(:last-child) {/*Все кроме последнего*/
+  margin-bottom: 5px;
+}
+
+.tabs-itemJs {
+	display: none;
+}
+
+.tabs-itemJs--active {
+	display: block;
+}
+/* // Табы правого блока - 1920px*/
+
+.course__right-h3 {
+  margin: 20px 0 45px;
+}
+
+.course__right-video {
+  margin: 0 auto 20px;
+  width: max-content;
+}
+
+/*Кнопка "Показать другие видео"*/
+.course__right-video iframe .ytp-button {
+  display: none;
+}
+
+/* Стрелка */
+.tabs-itemJs details summary {
+  position: relative;
+  display: contents;/*Чтобы припереполнения текста, текст не скролилл.*/
+  border-bottom: 1px #ccc solid;
+  width: max-content;
+  font-family: 'Russo', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-black);
+  cursor: pointer;
+  list-style: none;/* Спрячет нативную стрелку */
+}  
+
+.tabs-itemJs details summary::-webkit-details-marker {
+    display: none;
+}
+
+.tabs-itemJs details summary::before {
+    content: ' ';
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    background: url("../img/arrow.svg") 65% center no-repeat;
+    background-size: .8em .8em;
+}
+
+.tabs-itemJs details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.course__right-details details summary {
+  cursor: pointer;
+}
+/* // Стрелка */
+
+.course__right-urok {
+  padding-top: 20px;
+}
+
+.course__right-h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--color-boulder);
+}
+
+.course__right-personalPronouns, .course__right-words {
+  margin-bottom: 10px;
+  padding: 3px 10px;
+}
+
+.course__right-dictionaries {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 48% 52%;
+  grid-template-rows: repeat(120, max-content);
+  font-size: 14px;
+}
+
+.course__right-desrc {
+  display: inline-block;/*Для избавления скролла текста, во время перепольнения текста*/
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.course__right-desrc_paddingNone {
+  padding: 0;
+}
+
+.course__right-span sup {
+  top: 0em;
+  vertical-align: revert;
+  font-size: 12px;
+}
+
+.course__right-span-border {
+  padding: 0 2px 2px;
+  border: 1px solid var(--color-red);
+}
+
+.course__right-desrc_border {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 2px inset transparent;
+  padding: 11px 16px;
+  border-radius: 23px;
+  background-color: var(--color-mindaro);
+  width: 96%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.course__right-disBlock, .disBlock {
+  display: block;
+}
+
+.course__right-table {
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  width: max-content;
+}
+
+.course__right-table caption {
+  margin-bottom: 7px;
+  font-family: 'Russo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.course__right-table th, .course__right-table td {
+  padding: 5px 10px;
+  border: solid 1px #000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.course__right-table p {
+  margin: 0;
+}
+
+.course__right-table caption {
+  font-size: 14px;
+}
+
+/*-12урок - Счёт-*/
+.course__right-table .course__right-td {
+  /*перебили .course__right-table td*/
+  text-align: inherit;
+  vertical-align: baseline;
+}
+
+.course__right-table .course__right-td p {
+  /*перебили .course__right-table td*/
+  margin-bottom: 5px;
+} 
+/*-//12урок - Счёт-*/ 
+
+.course__right-table_none1920, .course__right-table_clone768, .course__right-table_clone12-768, .course__right-table_clone12-520 {
+  display: none;
+}
+
+.course__right-padding {
+  padding: 0;
+}
+
+.course__right-list {
+  display: flex;
+  justify-content: center;
+}
+
+.course__right-item {
+  margin-right: 100px;
+}
+
+/*Вертикальная фигурная скобка - ошый*/
+.course__brace {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.course__brace-text {
+  margin: 22px 0;
+  color: red;
+}
+
+.course__braces {
+  position: relative;
+  padding: .3em .5em;
+  margin-left: 1em;
+}
+.course__braces::before,
+.course__braces::after,
+.course__curly::before,
+.course__curly::after {
+  content: "";
+  position:absolute;
+  width: .8em;
+  height: 25%;
+  color: red;
+}
+.course__braces::before,
+.course__braces::after {
+  left: 0;
+  border-left: 2px solid;
+}
+.course__braces::before {
+  top: 0;
+  border-top-left-radius: .8em;
+}
+.course__braces::after {
+  bottom: 0;
+  border-bottom-left-radius: .8em;
+}
+.course__curly::before,
+.course__curly::after {
+  left: -.8em;
+  border-right: 2px solid;
+}
+.course__curly::before {
+  top: 25%;
+  border-bottom-right-radius: .8em;
+}
+.course__curly::after {
+  bottom: 25%;
+  border-top-right-radius: .8em;
+}
+
+/*Зеркальность left*/
+.course__braces_left {
+  padding-right: 1.5em;
+  padding-left: 0;
+}
+
+.course__braces_left::before, .course__braces_left::after {
+  transform: scale(-1, 1);
+}
+
+.course__braces_left .course__curly {
+  margin-left: -33px;
+}
+
+.course__braces_left .course__curly::before, .course__braces_left .course__curly::after {
+  left: 40%;
+  transform: scale(-1, 1);
+}
+/* // Вертикальная фигурная скобка - ошый*/
+
+/*---24 урок---*/
+.course__right-table_align p {/* таблица 2-4*/
+  text-align: center;
+}
+
+/*Пословицы*/
+.course__right-h3_bottom {
+  margin-bottom: 15px;
+}
+/* // Правый блок right-1920px*/
+/*** // Курс course-1920px***/
+
+
+/*** Раздел про учителя avtor-1920px ***/
+.avtor {
+  position: relative;
+  margin: -150px 0 0;
+  z-index: 2;
+}
+
+.avtor__container {
+  padding: 20px 30px;
+  max-width: 80%;
+  background-color: var(--color-white);
+}
+
+.avtor__desrc {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 400;
+  line-height: 22px;
+}  
+
+.avtor__figure {
+  margin: 30px auto;
+  width: 620px;
+}
+
+.avtor__figure figcaption {
+  padding: 7px;
+  text-align: center;
+}
+/*** // Раздел про учителя avtor-1920px ***/
+
+/*** Раздел donat-1920px ***/
+.donat {
+  position: relative;
+  margin: -150px 0 0;
+  z-index: 2;
+}
+
+.donat__container {
+  padding: 20px 30px 70px;
+  max-width: 80%;
+  background-color: var(--color-white);
+}
+
+.donat__container h2 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.donat__mail {
+  font-family: "Geometria Medium",sans-serif;
+  color: #1134B5;
+}
+
+.donat__mail:hover {
+  color: #ff4019;
+  -webkit-transition: color .15s;
+  transition: color .15s;
+}
+
+.donat__desrc {
+  display: block;
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+/*** // Раздел donat-1920px ***/
+
+
+/* отступ для Плавающего блока js - course__left_id line-1920px */
+.line {
+  border-top: 30px solid var(--color-lima);/*Для Плавающего блока js - course__left_id*/
+}
+/* // отступ для Плавающего блока js - course__left_id line-1920px */
+
+/* footer-1920px */
+.footer {
+  position: relative;
+  padding: 35px 0;
+  background-color: #000;
+  z-index: 100;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-right: auto;
+  padding: 10px 10px 5px;
+  border-top: 5px double transparent;
+  border-bottom: 5px double var(--color-white);
+  border-radius: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  color: var(--color-white);
+  outline: none;
+  cursor: pointer;
+  transition: border .4s ease-in-out, color .4s ease-in-out;
+}
+
+.footer__logo:focus {
+  border-bottom: 5px double var(--color-lima);
+  color: var(--color-lima);
+}
+
+.footer__logo:hover {
+  border-bottom: 5px double var(--color-silver);
+  color: var(--color-silver);
+}
+
+.footer__logo:active {
+  color: var(--color-juniper);
+}
+
+.footer-nav {
+  margin-top: 5px;
+  width: 155px;
+}
+
+.footer__list-icone {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+.footer__item-icone {
+  width: 47px;
+  height: 47px;
+}
+
+.footer__item-icone:not(:last-child) {
+  margin-right: 7px;
+}
+
+.footer__link-icone {
+  display: inline-block;
+  outline: none;
+}
+
+.footer__link-icone svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__link-icone {
+  transition: opacity .4s ease-in-out;
+}
+
+.footer__link-icone:focus, .footer__link-icone:hover {
+  opacity: .6;
+}
+
+.footer__link-icone:active{
+  opacity: .4;
+}
+
+.footer__link-icone_vk {
+  margin-top: 7px;
+  width: 38px;
+}
+/* // footer-1920px */
+
+
+@media (max-width: 1750px) {
+  .hero__img {
+    width: 100%;
+    background-image: url("../img/header__img-1750.jpg");
+  }  
+}
+
+
+@media (max-width: 1550px) {
+  .hero__img {
+    height: 520px;
+  }
+
+  .course__left {
+    margin-left: 25px;
+    width: max-content;
+  }
+
+  .course__container {
+    grid-template-columns: 235px 1fr;
+    gap: 25px;
+  }
+
+  .course__left-list_none1920 {
+    display: block;
+  }
+
+  .course__left-list_none1385 {
+    display: none;
+  }
+
+  .course__left-btn {
+    text-align: start;
+  }
+
+  /*правое*/
+  .course__right-content {
+    padding: 0;
+  }
+  
+  .course__right-details {
+    margin-right: 20px;
+  }
+
+  .course__right-h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .course__right-dictionaries {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /*** Раздел про учителя avtor-1550px ***/
+  .avtor {
+    margin-top: -75px;
+  }
+  /*** // Раздел про учителя avtor-1550px ***/
+
+  /*** Раздел donat-1550px ***/
+  .donat {
+    margin-top: -75px;
+  }
+
+  .donat__desrc {
+    font-size: 29px;
+    line-height: 42px;
+  }
+  /*** // Раздел donat-1550px ***/
+}
+
+
+@media (max-width: 1220px) {
+  .none1920 {
+    display: block;
+  }
+
+  .none1220 {
+    display: none;
+  }
+
+  .course__right-list {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .course__right-item {
+    margin-right: 25px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .none1024 {
+    display: none;
+  }
+
+  .container {
+    padding: 0 25px;
+  }
+
+
+  .header {
+    padding: 20px 0;
+  }  
+
+  .header__block-burger {
+    margin-top: -6px;
+    margin-left: -13px;
+  }
+
+  .burger {
+    display: block;
+    background-color: transparent;
+    outline-offset: 8px;
+    z-index: 17;
+    -webkit-transition: background-color .4s ease-in-out;
+    -ms-transition: background-color .4s ease-in-out;
+    -moz-transition: background-color .4s ease-in-out;
+    -o-transition: background-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;
+  }
+
+  .burger:focus {
+    outline: none;
+  }
+
+  .burger:hover {
+    background-color: var(--color-mindaro);
+  }
+
+  .burger:active {
+    background-color: transparent;
+  }
+
+  .burger span {
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: currentColor;
+    border-radius: 9px;
+    opacity: 1;
+    margin-top: 8px;
+    left: 8px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: background-color .4s ease-in-out;
+    -moz-transition: background-color .4s ease-in-out;
+    -o-transition: background-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;
+  }
+
+  /*Палочки*/
+  .burger span:nth-child(1) {
+    top: 0px;
+  }
+
+  .burger span:nth-child(2) {
+    top: 11px;
+  }
+
+  .burger span:nth-child(3) {
+    top: 21.5px;
+  }
+
+  .burger:focus span,
+  .burger:focus span:nth-child(2),
+  .burger:focus span:nth-child(3),
+  .burger:hover span,
+  .burger:hover span:nth-child(2),
+  .burger:hover span:nth-child(3),
+  .burger:active span,
+  .burger:active span:nth-child(2),
+  .burger:active span:nth-child(3) {
+    background-color: var(--color-greenPea);
+  }
+
+  .burger:focus {
+    background-color: var(--color-lima);
+  }
+
+  /*Крест*/
+  .burger.open span:nth-child(1) {
+    top: 13px;
+    left: -4px;
+    width: 38px;
+    /*38px длина палочки*/
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .burger.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  .burger.open span:nth-child(3) {
+    top: 13px;
+    left: -5px;
+    width: 38px;
+    /*38px длина палочки*/
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .header__block-menu {
+    position: absolute;
+    top: 95px;
+    margin-left: -160px;
+    padding-bottom: 25px;
+    width: 101%;
+    background-color: var(--color-white);
+    z-index: 16;
+  }
+
+  /*JS для burger-а*/
+  .menu {
+    transform: translateX(300%);
+    /*Скрывает меню*/
+  }
+
+  .menu.is-active {
+    /*is-active js*/
+    transform: none;
+  }
+
+  .burger.open span:nth-child(1),
+  .burger.open span:nth-child(3) {
+    top: 11px;
+    left: 7px;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-portGore);
+  }
+
+  .burger.open:focus span:nth-child(1),
+  .burger.open:focus span:nth-child(3) {
+    background-color: var(--color-black);
+  }
+
+  .burger.open:hover span:nth-child(1),
+  .burger.open:hover span:nth-child(3) {
+    background-color: var(--color-madison);
+  }
+
+  .burger.open span:nth-child(1) {
+    -webkit-transform: rotate(-315deg);
+    -moz-transform: rotate(-315deg);
+    -o-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+  }
+
+  .burger.open span:nth-child(3) {
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+
+  .header__nav {
+    margin-left: 25px;
+  }
+
+  .header__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  /*Конец JS для burger-а*/
+
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .hero__img {
+    height: 320px;
+    background-image: url("../img/header__img-1024.jpg");
+  } 
+
+
+  .course {
+    margin: -85px 0 0;
+  }
+
+  .course__container {
+    grid-template-columns: 185px 1fr;
+    gap: 20px;
+  }
+
+  .course__left {
+    margin-left: 15px;
+  }  
+
+  .course__left-stop {
+    width: max-content;
+  }
+
+  .course__left-list_none1921 {
+    display: block;
+  }
+
+  .course__left-list_none1920 {
+    display: none;
+  } 
+
+  /*правая*/
+  .course__right {
+    margin-right: 15px;
+  }  
+
+  .course__right-video iframe {
+    width: 450px;
+    height: 250px;
+  }
+
+  .course__right-table_none12-768 {
+    display: none;
+  }
+
+  .course__right-table_none1920, .course__right-table_clone12-768, .course__right-table_none22-1920 {
+    display: block;
+  }
+
+  /*** Раздел про учителя avtor-1024px ***/
+  .avtor {
+    margin: 0;
+  } 
+
+  .avtor__container {
+    padding: 20px 25px;
+    max-width: 100%;
+  }
+
+  .avtor__figure {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  /*** // Раздел про учителя avtor-1024px ***/
+
+  /*** Раздел donat-1024px ***/
+  .donat {
+    margin: 0;
+  } 
+
+  .donat__container {
+    padding: 20px 25px 70px;
+    max-width: 100%;
+  }
+
+  .donat__desrc {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /*** // Раздел donat-1024px ***/
+}
+
+
+@media (max-width: 768px) {
+  .none768 {
+    display: none;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .header__logo {
+    font-size: 16px;
+    line-height: 24px;
+  }  
+
+  .header__block-menu {
+    top: 75px;
+    margin-left: -120px;
+  }
+
+  .hero__container {
+    padding: 0;
+  }
+
+  .hero__img {
+    background-image: url(../img/header__img-768.jpg);
+  }
+
+  .course {
+    margin-top: 0;
+  }
+
+  .course__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .course__left {
+    margin: 0;
+    width: 100%;
+  }
+
+  .course__left_1920, .course__left-list_none1921 {
+    display: none;
+  }
+
+  .course__left_768, .course__left-list_none1922 {
+    display: block;
+  }
+
+  .course__left-list1922, .course__left-list_768 {
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+  }
+
+  .course__left-list {
+    padding: 10px 10px 0;
+    width: 100%;
+  }
+
+  .course__left-list_padding {
+    padding: 10px;
+  }
+
+  .course__left-item {
+    width: 70px;
+  }
+
+  .course__left-item_768 {
+    width: 100%;
+  }
+
+  /*правая*/
+  .course__right {
+    margin-right: 0;
+    padding: 10px 20px 20px;
+  }
+
+  .course__right-h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .course__right-video {
+    width: 90%;
+  }
+
+  .course__right-video iframe {
+    width: 100%;
+  }
+
+  .course__right-details details summary {
+    font-size: 16px;
+  }
+
+  /*5 урок*/
+  .course__right-table_clone768 {
+    display: block;
+  }
+  /* // 5 урок*/
+
+
+  /*** Раздел про учителя avtor-768px ***/
+  .avtor__container {
+    padding: 20px;
+  }
+  /*** // Раздел про учителя avtor-768px ***/
+
+
+  /*** Раздел donat-768px ***/
+  .donat__container {
+    padding: 20px 20px 70px;
+  }
+  /*** Раздел donat-768px ***/
+
+  .line {
+    position: relative;
+    display: none;
+    z-index: 100;
+  }
+
+
+  .footer__logo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 666px) {
+  /*** Раздел donat-666px ***/
+  .donat__block666 {
+    display: block;
+  }
+  /*** Раздел donat-666px ***/
+}
+
+@media (max-width: 520px) {
+  .desrc {
+    font-size: 16px;
+  }
+
+
+  .hero, .course, .course__right {
+    margin-top: -1px;
+  }
+
+  .hero__img {
+    background-image: url(../img/header__img-320.jpg);
+    height: 272px;
+  }
+
+  .course__right {
+    padding: 10px 17px 20px;
+  }
+
+  .course__right-video iframe {
+    height: 190px;
+  }
+
+  .course__right-desrc_border {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: inherit;
+  }
+
+  .course__right-h4 {
+    font-size: 14px;
+  }
+
+  .course__right-table_none5-520, .course__right-table_none6-520, .course__right-table_none7-520, .course__right-spannone7-520, .course__right-table_none10-520, .course__right-table_none12-520, .course__right-table_clone12-768, .course__right-table_none13-520, .course__right-table_clone24-520 {
+    display: none;
+  }
+
+  .course__right-table_none5-1920, .course__right-table_none6-1920, .course__right-table_none7-1920, .course__right-spannone7-1920, .course__right-table_none10-1920, .course__right-table_none12-1920, .course__right-table_clone12-520, .course__right-table_none13-1920, .course__right-table_clone24-1920 {
+    display: block;
+  }
+
+  /*** Раздел donat-580px ***/
+  .donat__container h2 {
+    font-size: 35px;
+  }
+
+  .donat__desrc {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  /*** Раздел donat-580px ***/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

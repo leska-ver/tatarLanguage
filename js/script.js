@@ -109,10 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         b.className = '';
         b.style.top = '';
-      }
-      // window.addEventListener('resize', function() {
-      //   a.children[0].style.width = getComputedStyle(a, '').width
-      // }, false);
+      }      
     }
     })()
 

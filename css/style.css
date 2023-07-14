@@ -52,6 +52,7 @@ body {
 
 body {
   min-width: 400px;
+  height: auto;/*Не удалять!*/
   font-family: 'OpenSsans', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -437,6 +438,7 @@ main {
   margin-right: 30px;
   padding: 20px 30px;
   background-color: var(--color-white);
+  min-height: 902px;
 }
 
 .course__right-content {
@@ -1329,6 +1331,7 @@ main {
   .course__right {
     margin-right: 0;
     padding: 10px 20px 20px;
+    min-height: max-content;
   }
 
   .course__right-h3 {

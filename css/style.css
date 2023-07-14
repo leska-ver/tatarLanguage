@@ -1224,7 +1224,7 @@ main {
 
   .avtor__container {
     padding: 20px 25px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .avtor__figure {
@@ -1241,7 +1241,7 @@ main {
 
   .donat__container {
     padding: 20px 25px 70px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .donat__desrc {
@@ -1280,7 +1280,7 @@ main {
   }
 
   .course {
-    margin-top: 0;
+    margin-top: -1px;
   }
 
   .course__container {
@@ -1360,22 +1360,24 @@ main {
 
   /*** Раздел про учителя avtor-768px ***/
   .avtor {
-    margin-top: 0;
+    margin-top: -1px;
   }
 
   .avtor__container {
     padding: 20px;
+    max-width: 100%;
   }
   /*** // Раздел про учителя avtor-768px ***/
 
 
   /*** Раздел donat-768px ***/
   .donat {
-    margin-top: 0;
+    margin-top: -1px;
   }
 
   .donat__container {
     padding: 20px 20px 70px;
+    max-width: 100%;
   }
   /*** Раздел donat-768px ***/
 
@@ -1406,7 +1408,7 @@ main {
   }
 
 
-  .hero, .course, .course__right {
+  .hero, .course__right {
     margin-top: -1px;
   }
 
@@ -1440,18 +1442,9 @@ main {
   .course__right-table_none5-1920, .course__right-table_none6-1920, .course__right-table_none7-1920, .course__right-spannone7-1920, .course__right-table_none10-1920, .course__right-table_none12-1920, .course__right-table_clone12-520, .course__right-table_none13-1920, .course__right-table_clone24-1920 {
     display: block;
   }
-
-  /*** Раздел про учителя avtor-580px ***/
-  .avtor {
-    margin: -1px;
-  }
-  /*** Раздел про учителя avtor-580px ***/ 
+  
 
   /*** Раздел donat-580px ***/
-  .donat {
-    margin-top: -1px;
-  }
-
   .donat__container h2 {
     font-size: 35px;
   }

@@ -326,7 +326,7 @@ main {
 
 .header__btn:focus {
   border-bottom: 1px solid var(--color-portGore);
-  box-shadow: 0px 5px 5px -5px var(--color-greenPea);
+  box-shadow: 0px 1px 3px 5px var(--color-lima);
   color: var(--color-portGore);
 }
 
@@ -338,14 +338,6 @@ main {
   border: 1px solid transparent;
   box-shadow: 0 5px 5px -5px var(--color-greenPea);
 }
-
-/*не удалят! JS активная кнопка -Главная-*/
-.tab-is-active.header__btn {
-  border-bottom: 1px solid var(--color-portGore);
-  box-shadow: 0px 5px 5px -5px var(--color-greenPea);
-  color: var(--color-portGore);
-}
-/* // не удалят! JS активная кнопка -Главная-*/
 /*** // Шапка header-1920px***/
 
 
@@ -1470,7 +1462,7 @@ main {
 
 
 
-/**/
+/*
 .active-link {
   color: var(--color-purpleHeart);
-}
+}*/

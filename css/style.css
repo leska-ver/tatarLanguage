@@ -1276,7 +1276,7 @@ main {
   }
 
   .hero__img {
-    background-image: url(../img/header__img-768.jpg);
+    background-image: url("../img/header__img-768.jpg");
   }
 
   .course {
@@ -1411,7 +1411,7 @@ main {
   }
 
   .hero__img {
-    background-image: url(../img/header__img-320.jpg);
+    background-image: url("../img/header__img-320.jpg");
     height: 272px;
   }
 
@@ -1477,3 +1477,7 @@ main {
 
 
 
+/**/
+.active-link {
+  color: var(--color-purpleHeart);
+}

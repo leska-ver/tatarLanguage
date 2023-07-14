@@ -24,33 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  // target Табы - от Меню header js(Главная-Об авторе-Донат)
-  const allTabBtns = document.querySelectorAll('.js-tabs-btn');
-
-  allTabBtns.forEach(function (tabsBtn) {
-    tabsBtn.addEventListener('click', function (event) {
-
-
-      const path = event.currentTarget.dataset.path
-
-      document.querySelectorAll('.tab-content').forEach(function (tabContent) {
-        tabContent.classList.remove('tab-content-active')
-      })
-      document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
-
-      allTabBtns.forEach(function (el) {
-        el.classList.remove('tab-is-active');
-      });
-
-      this.classList.add('tab-is-active');
-    })
-  })
-
-
-
-
-
-
   //Табы в course
   let tabsBtn = document.querySelectorAll('.course__left-btn_js');//Находим все кнопки
   let tabsItem = document.querySelectorAll('.tabs-itemJs');//Находим все li-ки

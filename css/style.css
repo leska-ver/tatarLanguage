@@ -891,6 +891,10 @@ main {
 
 
 @media (max-width: 1550px) {
+  .header {
+    padding: 20px 0;
+  }
+
   .hero__img {
     height: 520px;
   }
@@ -938,6 +942,10 @@ main {
 
 
   /*** Раздел donat-1550px ***/
+  .donat__container h2 {
+    margin: 10px 0 20px;
+  }
+
   .donat__desrc {
     font-size: 29px;
     line-height: 42px;
@@ -977,7 +985,7 @@ main {
 
 
   .header {
-    padding: 20px 0;
+    padding: 5px 0 15px;
   }  
 
   .header__block-burger {

@@ -996,6 +996,11 @@ main {
     padding: 5px 0 15px;
   }  
 
+  .header__logo {
+    font-size: 18px;
+    line-height: 24px;
+  }  
+
   .header__block-burger {
     margin-top: -6px;
     margin-left: -13px;
@@ -1262,9 +1267,27 @@ main {
     padding: 5px 0 15px;
   }
 
+  .footer__logo {
+    font-size: 18px;
+    line-height: 24px;
+  } 
+
+  .footer-nav {
+    margin-top: 10px;
+    width: 115px;
+  }
+
   .footer__item-icone {
     width: 37px;
     height: 37px;
+  }
+
+  .footer__item-icone:first-child {
+    width: 30px;
+  }
+
+  .footer__item-icone:not(:last-child) {
+    margin-right: 5px;
   }
 
   .footer__link-icone_vk {

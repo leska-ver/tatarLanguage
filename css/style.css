@@ -1261,6 +1261,15 @@ main {
   .footer {
     padding: 5px 0 15px;
   }
+
+  .footer__item-icone {
+    width: 37px;
+    height: 37px;
+  }
+
+  .footer__link-icone_vk {
+    width: 28px;
+  }
 }
 
 

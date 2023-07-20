@@ -955,6 +955,10 @@ main {
     line-height: 42px;
   }
   /*** // Раздел donat-1550px ***/
+
+  .footer {
+    padding: 20px 0;
+  }
 }
 
 
@@ -1253,6 +1257,10 @@ main {
     line-height: 36px;
   }
   /*** // Раздел donat-1024px ***/
+
+  .footer {
+    padding: 5px 0 15px;
+  }
 }
 
 

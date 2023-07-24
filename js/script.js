@@ -87,6 +87,435 @@ document.addEventListener('DOMContentLoaded', function() {
     })()
 
 
+  //Код для Ютюб видео video-iframe - Остановить проигрывание видео при клике на другое видео.
+  const videoOb = document.querySelector(".video-iframe")// Для обёртки if
+  if (videoOb) { // Обёртка if. Спасение Gulp-а от null в браузере*/
+
+    // Массив с id видео /*Для Урока 1*/
+    const videos = [{id: "W0SwgrzwWbs"}];
+    const tag = document.createElement('script');
+    const players = [];
+
+    tag.src = "https://www.youtube.com/iframe_api";
+
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    const pVideo = document.querySelector(".video-iframeOne");
+    for(var i = 0; videos.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDiv = document.createElement("div");
+      newDiv.setAttribute("id", videos[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideo.appendChild(newDiv);
+
+      item = document.querySelector("#"+videos[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 2*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 3*/
+    const videosThree = [{id: "iVywagyeZN8"}];
+    const pVideoThree = document.querySelector(".video-iframeThree");
+    for(var i = 0; videosThree.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivThree = document.createElement("div");
+      newDivThree.setAttribute("id", videosThree[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoThree.appendChild(newDivThree);
+
+      item = document.querySelector("#"+videosThree[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 4*/
+    const videosFour = [{id: "xo_nOUIREnI"}];
+    const pVideoFour = document.querySelector(".video-iframeFour");
+    for(var i = 0; videosFour.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivFour = document.createElement("div");
+      newDivFour.setAttribute("id", videosFour[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoFour.appendChild(newDivFour);
+
+      item = document.querySelector("#"+videosFour[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 5*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 6*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 7*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 8*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 9*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 10*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 11*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 12*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 13*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 14*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 15*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 16*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 17*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 18*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 19*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 20*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 21*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 22*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+    /*Для Урока 23*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    } 
+
+    /*Для Урока 24*/
+    const videosTwo = [{id: "cSsXuJxM4K0"}];
+    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    for(var i = 0; videosTwo.length > i; i++) {
+      // Создаем дочерние элементы с id
+      const newDivTwo = document.createElement("div");
+      newDivTwo.setAttribute("id", videosTwo[i].id);
+      
+      // Добавление элементов видео в родительских контейнер        
+      pVideoTwo.appendChild(newDivTwo);
+
+      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      var player;
+      players.push(item);
+    }
+
+
+    /*Общая функция для всех видео стили*/
+    // function onYouTubeIframeAPIReady() { 
+      window.onYouTubeIframeAPIReady = function() { /* С document.addEventListener('DOMContentLoaded', function() {}*/
+   
+      for(var k = 0; players.length > k; k++) {
+        players[k] = new YT.Player(players[k], {
+                  height: '315',
+                  width: '560',
+                  videoId: players[k],
+                  events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+              });
+      }
+    }
+
+    function onPlayerReady(event) {
+      event.target.stopVideo();
+    }
+
+    /*Общая функция для всех видео стоп*/
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+          const temp = event.target.getVideoUrl();
+          for (var i = 0; i < players.length; i++) {
+            if (players[i].getVideoUrl() != temp) players[i].stopVideo();
+          }
+      }
+    }
+
+  }; //Обёртка if.
 
 
 

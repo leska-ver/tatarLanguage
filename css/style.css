@@ -52,6 +52,7 @@ body {
 
 body {
   min-width: 400px;
+  height: auto;
   font-family: 'OpenSsans', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1121,9 +1122,9 @@ main {
 
   .header__block-menu {
     position: absolute;
-    top: 95px;
+    top: 65px;
     margin-left: -160px;
-    padding-bottom: 25px;
+    padding: 25px 0;
     width: 101%;
     background-color: var(--color-white);
     z-index: 16;
@@ -1323,7 +1324,7 @@ main {
   }  
 
   .header__block-menu {
-    top: 75px;
+    top: 55px;
     margin-left: -120px;
   }
 
@@ -1462,7 +1463,6 @@ main {
   .desrc {
     font-size: 16px;
   }
-
 
   .hero, .course__right {
     margin-top: -1px;

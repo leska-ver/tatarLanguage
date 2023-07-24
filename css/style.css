@@ -485,10 +485,10 @@ main {
 .tabs-itemJs details summary::before {
     content: ' ';
     display: inline-block;
-    width: .8em;
-    height: .8em;
+    width: .8rem;
+    height: .8rem;
     background: url("../img/arrow.svg") 65% center no-repeat;
-    background-size: .8em .8em;
+    background-size: .8rem .8rem;
 }
 
 .tabs-itemJs details[open] summary::before {
@@ -638,7 +638,7 @@ main {
 
 .course__braces {
   position: relative;
-  padding: .3em .5em;
+  padding: .3rem .5rem;
   margin-left: 1em;
 }
 .course__braces::before,
@@ -647,40 +647,51 @@ main {
 .course__curly::after {
   content: "";
   position:absolute;
-  width: .8em;
+  width: .8rem;
   height: 25%;
   color: red;
 }
-.course__braces::before,
-.course__braces::after {
-  left: 0;
-  border-left: 2px solid;
-}
+
 .course__braces::before {
-  top: 0;
-  border-top-left-radius: .8em;
+  border-left: 2px solid;
+  border-top-left-radius: .8rem;
 }
 .course__braces::after {
   bottom: 0;
-  border-bottom-left-radius: .8em;
+  border-left: 2px solid;
+  border-bottom-left-radius: .8rem;
+}
+.course__braces_left::before {
+  top: 1px;
+  left: 2px;
+}
+.course__braces_left::after {
+  left: 2px;
+}
+.course__braces_right::before {
+  top: 1px;
+  left: 0;
+}
+.course__braces_right::after {
+  left: 0;
 }
 .course__curly::before,
 .course__curly::after {
-  left: -.8em;
+  left: -.8rem;
   border-right: 2px solid;
 }
 .course__curly::before {
   top: 25%;
-  border-bottom-right-radius: .8em;
+  border-bottom-right-radius: .8rem;
 }
 .course__curly::after {
   bottom: 25%;
-  border-top-right-radius: .8em;
+  border-top-right-radius: .8rem;
 }
 
 /*Зеркальность left*/
 .course__braces_left {
-  padding-right: 1.5em;
+  padding-right: 1.5rem;
   padding-left: 0;
 }
 

@@ -667,6 +667,7 @@ main {
 }
 .course__braces_left::after {
   left: 2px;
+  bottom: 1px;
 }
 .course__braces_right::before {
   top: 1px;

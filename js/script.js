@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {  
+  //alert('работает');Ищет ошибки по строчно
 
 
   /*Клик БУРГЕР-Саши*/
@@ -86,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     })()
 
+    
 
   //Код для Ютюб видео video-iframe - Остановить проигрывание видео при клике на другое видео.
   const videoOb = document.querySelector(".video-iframe")// Для обёртки if
@@ -164,324 +166,324 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
 
     /*Для Урока 5*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosFive = [{id: "O8PCdipGxzA"}];
+    const pVideoFive = document.querySelector(".video-iframeFive");
+    for(var i = 0; videosFive.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivFive = document.createElement("div");
+      newDivFive.setAttribute("id", videosFive[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoFive.appendChild(newDivFive);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosFive[i].id).getAttribute("id");
       var player;
       players.push(item);
     }
 
-    /*Для Урока 6*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    /*Для Урока 6*/ 
+    const videosSix = [{id: "SDT4lN1Xmt4"}];
+    const pVideoSix = document.querySelector(".video-iframeSix");
+    for(var i = 0; videosSix.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivSix = document.createElement("div");
+      newDivSix.setAttribute("id", videosSix[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoSix.appendChild(newDivSix);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosSix[i].id).getAttribute("id");
       var player;
       players.push(item);
-    } 
+    }
 
     /*Для Урока 7*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosSeven = [{id: "yFF2P57jcqc"}];
+    const pVideoSeven = document.querySelector(".video-iframeSeven");
+    for(var i = 0; videosSeven.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivSeven = document.createElement("div");
+      newDivSeven.setAttribute("id", videosSeven[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoSeven.appendChild(newDivSeven);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosSeven[i].id).getAttribute("id");
       var player;
       players.push(item);
     } 
 
     /*Для Урока 8*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosEight = [{id: "nKhh1TYZOFw"}];
+    const pVideoEight = document.querySelector(".video-iframeEight");
+    for(var i = 0; videosEight.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivEight = document.createElement("div");
+      newDivEight.setAttribute("id", videosEight[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoEight.appendChild(newDivEight);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosEight[i].id).getAttribute("id");
       var player;
       players.push(item);
     } 
 
-    /*Для Урока 9*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    /*Для Урока 9
+    const videosNine = [{id: "0la1ttSQQxM"}];
+    const pVideoNine = document.querySelector(".video-iframeNine");
+    for(var i = 0; videosNine.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivNine = document.createElement("div");
+      newDivNine.setAttribute("id", videosNine[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoNine.appendChild(newDivNine);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosNine[i].id).getAttribute("id");
       var player;
       players.push(item);
-    }
+    }*/ 
 
-    /*Для Урока 10*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    /*Для Урока 10
+    const videosTen = [{id: "43FJXjqiFXY"}];
+    const pVideoTen = document.querySelector(".video-iframeTen");
+    for(var i = 0; videosTen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivTen = document.createElement("div");
+      newDivTen.setAttribute("id", videosTen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoTen.appendChild(newDivTen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosTen[i].id).getAttribute("id");
       var player;
       players.push(item);
-    } 
+    }*/ 
 
-    /*Для Урока 11*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    /*Для Урока 11
+    const videosEleven = [{id: "9nmU4mg8v1A"}];
+    const pVideoEleven = document.querySelector(".video-iframeEleven");
+    for(var i = 0; videosEleven.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivEleven = document.createElement("div");
+      newDivEleven.setAttribute("id", videosEleven[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoEleven.appendChild(newDivEleven);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosEleven[i].id).getAttribute("id");
       var player;
       players.push(item);
-    } 
+    }*/ 
 
     /*Для Урока 12*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosTwelve = [{id: "A8gi-aWIKhA"}];
+    const pVideoTwelve = document.querySelector(".video-iframeTwelve");
+    for(var i = 0; videosTwelve.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivTwelve = document.createElement("div");
+      newDivTwelve.setAttribute("id", videosTwelve[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoTwelve.appendChild(newDivTwelve);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosTwelve[i].id).getAttribute("id");
       var player;
       players.push(item);
     } 
 
     /*Для Урока 13*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosThreeteen = [{id: "mWcW99Hvyiw"}];
+    const pVideoThreeteen = document.querySelector(".video-iframeThreeteen");
+    for(var i = 0; videosThreeteen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivThreeteen = document.createElement("div");
+      newDivThreeteen.setAttribute("id", videosThreeteen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoThreeteen.appendChild(newDivThreeteen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosThreeteen[i].id).getAttribute("id");
       var player;
       players.push(item);
     }
 
     /*Для Урока 14*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosFourteen = [{id: "q1SYBAgm8tU"}];
+    const pVideoFourteen = document.querySelector(".video-iframeFourteen");
+    for(var i = 0; videosFourteen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivFourteen = document.createElement("div");
+      newDivFourteen.setAttribute("id", videosFourteen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoFourteen.appendChild(newDivFourteen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosFourteen[i].id).getAttribute("id");
       var player;
       players.push(item);
     } 
 
     /*Для Урока 15*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosFifteen = [{id: "B6SEYTAsjck"}];
+    const pVideoFifteen = document.querySelector(".video-iframeFifteen");
+    for(var i = 0; videosFifteen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivFifteen = document.createElement("div");
+      newDivFifteen.setAttribute("id", videosFifteen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoFifteen.appendChild(newDivFifteen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosFifteen[i].id).getAttribute("id");
       var player;
       players.push(item);
     } 
 
-    /*Для Урока 16*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    /*Для Урока 16*/ 
+    const videosSixteen = [{id: "ckle8AWsgfc"}];
+    const pVideoSixteen = document.querySelector(".video-iframeSixteen");
+    for(var i = 0; videosSixteen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivSixteen = document.createElement("div");
+      newDivSixteen.setAttribute("id", videosSixteen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoSixteen.appendChild(newDivSixteen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosSixteen[i].id).getAttribute("id");
       var player;
       players.push(item);
-    } 
+    }
 
     /*Для Урока 17*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosSeventeen = [{id: "BxEGSBLIq5M"}];
+    const pVideoSeventeen = document.querySelector(".video-iframeSeventeen");
+    for(var i = 0; videosSeventeen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivSeventeen = document.createElement("div");
+      newDivSeventeen.setAttribute("id", videosSeventeen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoSeventeen.appendChild(newDivSeventeen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosSeventeen[i].id).getAttribute("id");
       var player;
       players.push(item);
     }
 
     /*Для Урока 18*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosEighteen = [{id: "y4d55WNy2v0"}];
+    const pVideoEighteen = document.querySelector(".video-iframeEighteen");
+    for(var i = 0; videosEighteen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivEighteen = document.createElement("div");
+      newDivEighteen.setAttribute("id", videosEighteen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoEighteen.appendChild(newDivEighteen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosEighteen[i].id).getAttribute("id");
       var player;
       players.push(item);
     } 
 
     /*Для Урока 19*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosNineteen = [{id: "xPcI4SI364Q"}];
+    const pVideoNineteen = document.querySelector(".video-iframeNineteen");
+    for(var i = 0; videosNineteen.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivNineteen = document.createElement("div");
+      newDivNineteen.setAttribute("id", videosNineteen[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoNineteen.appendChild(newDivNineteen);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosNineteen[i].id).getAttribute("id");
       var player;
       players.push(item);
     }
 
-    /*Для Урока 20*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    /*Для Урока 20
+    const videosTwenty = [{id: "68NUhhgzOZc"}];
+    const pVideoTwenty = document.querySelector(".video-iframeTwenty");
+    for(var i = 0; videosTwenty.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivTwenty = document.createElement("div");
+      newDivTwenty.setAttribute("id", videosTwenty[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoTwenty.appendChild(newDivTwenty);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosTwenty[i].id).getAttribute("id");
       var player;
       players.push(item);
-    } 
+    }*/ 
 
     /*Для Урока 21*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
+    const videosTwentyOne = [{id: "p5XllMTRVZM"}];
+    const pVideoTwentyOne = document.querySelector(".video-iframeTwentyOne");
     for(var i = 0; videosTwo.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivTwentyOne = document.createElement("div");
+      newDivTwentyOne.setAttribute("id", videosTwentyOne[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoTwentyOne.appendChild(newDivTwentyOne);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosTwentyOne[i].id).getAttribute("id");
       var player;
       players.push(item);
     }
 
     /*Для Урока 22*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosTwentyTwo = [{id: "TWSZApXXDxE"}];
+    const pVideoTwentyTwo = document.querySelector(".video-iframeTwentyTwo");
+    for(var i = 0; videosTwentyTwo.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivTwentyTwo = document.createElement("div");
+      newDivTwentyTwo.setAttribute("id", videosTwentyTwo[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoTwentyTwo.appendChild(newDivTwentyTwo);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosTwentyTwo[i].id).getAttribute("id");
       var player;
       players.push(item);
     }
 
     /*Для Урока 23*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    const videosTwentyThree = [{id: "Hd9zvfOdc3I"}];
+    const pVideoTwentyThree = document.querySelector(".video-iframeTwentyThree");
+    for(var i = 0; videosTwentyThree.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivTwentyThree = document.createElement("div");
+      newDivTwentyThree.setAttribute("id", videosTwentyThree[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoTwentyThree.appendChild(newDivTwentyThree);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosTwentyThree[i].id).getAttribute("id");
       var player;
       players.push(item);
     } 
 
-    /*Для Урока 24*/
-    const videosTwo = [{id: "cSsXuJxM4K0"}];
-    const pVideoTwo = document.querySelector(".video-iframeTwo");
-    for(var i = 0; videosTwo.length > i; i++) {
+    /*Для Урока 24
+    const videosTwentyFour = [{id: "2ZEkAsN0JjM"}];
+    const pVideoTwentyFour = document.querySelector(".video-iframeTwentyFour");
+    for(var i = 0; videosTwentyFour.length > i; i++) {
       // Создаем дочерние элементы с id
-      const newDivTwo = document.createElement("div");
-      newDivTwo.setAttribute("id", videosTwo[i].id);
+      const newDivTwentyFour = document.createElement("div");
+      newDivTwentyFour.setAttribute("id", videosTwentyFour[i].id);
       
       // Добавление элементов видео в родительских контейнер        
-      pVideoTwo.appendChild(newDivTwo);
+      pVideoTwentyFour.appendChild(newDivTwentyFour);
 
-      item = document.querySelector("#"+videosTwo[i].id).getAttribute("id");
+      item = document.querySelector("#"+videosTwentyFour[i].id).getAttribute("id");
       var player;
       players.push(item);
-    }
+    }*/
 
 
     /*Общая функция для всех видео стили*/
@@ -490,8 +492,8 @@ document.addEventListener('DOMContentLoaded', function() {
    
       for(var k = 0; players.length > k; k++) {
         players[k] = new YT.Player(players[k], {
-                  height: '315',
                   width: '560',
+                  height: '315',
                   videoId: players[k],
                   events: {
                     'onReady': onPlayerReady,

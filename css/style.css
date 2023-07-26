@@ -1400,7 +1400,7 @@ main {
     width: 90%;
   }
 
-  .course__right-video iframe {
+  .course__right-video .iframe, .course__right-video iframe {
     width: 100%;
   }
 

@@ -1464,6 +1464,14 @@ main {
     font-size: 16px;
   }
 
+  .none520 {
+    display: none;
+  }
+
+  .block520 {
+    display: block;
+  }
+
   .hero, .course__right {
     margin-top: -1px;
   }

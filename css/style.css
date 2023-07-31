@@ -218,7 +218,7 @@ main {
   text-underline-position: under;
 }
 
-.none1920, .course__right-table_none5-1920, .course__right-table_none6-1920, .course__right-table_none7-1920, .course__right-spannone7-1920, .course__right-table_none10-1920, .course__right-table_none12-1920, .course__right-table_none13-1920, .course__right-table_none22-1920, .course__right-table_clone24-1920, .block520 {
+.none1920, .course__right-table_none5-1920, .course__right-table_none6-1920, .course__right-table_none7-1920, .course__right-spannone7-1920, .course__right-table_none10-1920, .course__right-table_none12-1920, .course__right-table_clone12-400, .course__right-table_none13-1920, .course__right-table_none22-1920, .course__right-table_clone24-1920, .block520 {
   display: none;
 }
 
@@ -1513,7 +1513,7 @@ main {
   }
   
 
-  /*** Раздел donat-580px ***/
+  /*** Раздел donat-520px ***/
   .donat__container h2 {
     font-size: 35px;
   }
@@ -1522,9 +1522,19 @@ main {
     font-size: 20px;
     line-height: 26px;
   }
-  /*** Раздел donat-580px ***/
+  /*** Раздел donat-520px ***/
 }
 
+
+@media (max-width: 400px) {
+  .none400, .course__right-table_none12-1920 {
+    display: none;
+  }
+
+  .course__right-table_clone12-400 {
+    display: block;
+  }
+}
 
 
 

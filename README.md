@@ -4,6 +4,9 @@ https://leska-ver.github.io/tatarLanguage/
 <p>Пуши по отдельности в VSCode</p>
 <br>
 - git status
+<br>
 - git add .
-- git commit -m "Вернул номер карты Альфабанк"
+<br>
+- git commit -m "tatarLanguage"
+<br>
 - git push
